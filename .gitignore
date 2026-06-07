@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+app/
+env/
+__pycache__/
+*.mp4
+index.html

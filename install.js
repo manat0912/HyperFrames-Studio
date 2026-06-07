@@ -50,5 +50,16 @@ module.exports = {
         }
       }
     },
+    // Install Node/Bun dependencies and build the TypeScript monorepo packages
+    {
+      method: "shell.run",
+      params: {
+        path: "app",
+        message: [
+          "bun install",
+          "bun run build"
+        ]
+      }
+    }
   ]
 }

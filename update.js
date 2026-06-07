@@ -38,6 +38,17 @@ module.exports = {
           "uv pip install -r requirements.txt"
         ]
       }
+    },
+    // Update Node/Bun dependencies and rebuild the TypeScript monorepo packages
+    {
+      method: "shell.run",
+      params: {
+        path: "app",
+        message: [
+          "bun install",
+          "bun run build"
+        ]
+      }
     }
   ]
 }
