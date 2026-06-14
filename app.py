@@ -369,7 +369,7 @@ def generate_html_with_cloud_ai(prompt, cloud_model, api_key, current_html):
         return current_html, "⚠️ Please enter an AI prompt."
         
     # Default Gemini Key
-    gemini_default_key = "AIzaSyAbypoKNZASkaHp6ul5bxP-cFWoquJep3w"
+    gemini_default_key = ""
     
     # Identify provider and model properties
     if "Gemini" in cloud_model:
